@@ -1,0 +1,18 @@
+<header class="header__navbar">
+
+<ul class="nav justify-content-right"> 
+    <li class="nav-item dropdown" id="drop"> 
+    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{name}}</a> 
+    <div class="dropdown-menu"> 
+    <a class="dropdown-item" routerLink="/private/navbar/details">Profile</a> 
+    <a class="dropdown-item" routerLink="/private/navbar/mybookings/upcoming">My Bookings
+    <span>({{count}})</span></a> 
+    <a class="dropdown-item" routerLink="/private/navbar/faqs">FAQs</a> 
+    <hr>
+    <a class="dropdown-item" routerLink="/public/login" (click)="logout()">Logout</a> 
+    </div> 
+    </li> 
+</ul>
+</header><br><br><br><br>
+
+<router-outlet></router-outlet>
